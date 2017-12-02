@@ -21,7 +21,6 @@ RSS: false
 weibo_username:     liangyuqi123
 zhihu_username:     liangyuqi_123
 github_username:    liangyuqi
-segmentfault: liangyuqi
 #facebook_username:  liangyuqi
 #jianshu_username:   e71990ada2fd
 #twitter_username:   liangyuqi
@@ -32,7 +31,7 @@ segmentfault: liangyuqi
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 permalink: pretty
-paginate: 5
+paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
@@ -94,7 +93,10 @@ service-worker: true
 
 # Friends
 friends: [
-   {
+    {
+        title: "Segmentfault",
+        href: "https://segmentfault.com/u/liangyuqi"
+    },{
         title: "Apple",
         href: "https://apple.com"
     },{

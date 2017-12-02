@@ -21,6 +21,7 @@ RSS: false
 weibo_username:     liangyuqi123
 zhihu_username:     liangyuqi_123
 github_username:    liangyuqi
+segmentfault:liangyuqi
 #facebook_username:  liangyuqi
 #jianshu_username:   e71990ada2fd
 #twitter_username:   liangyuqi
@@ -94,9 +95,6 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "Segmentfault",
-        href: "https://segmentfault.com/u/liangyuqi"
-    },{
         title: "Apple",
         href: "https://apple.com"
     },{

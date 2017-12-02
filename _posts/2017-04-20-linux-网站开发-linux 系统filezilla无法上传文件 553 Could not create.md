@@ -3,12 +3,12 @@ layout:     post
 title:      linux 系统filezilla无法上传文件 553 Could not create
 subtitle:   响应：553 Could not create file.  错误：严重文件传输错误
 date:       2017-04-20
-author:     L
+author:     Liangyuqi
 header-img: img/post-bg-ios9-web.jpg
 catalog: true
 tags:
-    - linux
-    - 网站开发
+    - iOS
+    - iOS开发基础
 ---
 
 >做网站过程中遇见了很多问题，解决了但是解决方法过一段时间就会遗忘，整理出来以便以后查看。

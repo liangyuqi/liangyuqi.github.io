@@ -4,7 +4,7 @@ title:      linux 系统filezilla无法上传文件 553 Could not create
 subtitle:   响应：553 Could not create file.  错误：严重文件传输错误
 date:       2017-04-20
 author:     Liangyuqi
-header-img: img/post-bg-ios9-web.jpg
+header-img: img/post-bg-1.jpg
 catalog: true
 tags:
     - linux

@@ -7,8 +7,8 @@ author:     Liangyuqi
 header-img: img/post-bg-ios9-web.jpg
 catalog: true
 tags:
-    - iOS
-    - iOS开发基础
+    - linux
+    - 网站开发
 ---
 
 >做网站过程中遇见了很多问题，解决了但是解决方法过一段时间就会遗忘，整理出来以便以后查看。
@@ -19,9 +19,9 @@ tags:
 
 解决方案：
 
- 一.必须将站点的文件上传到 /htdocs 目录（windows不用）
+ **一.必须将站点的文件上传到 /htdocs 目录（windows不用）**
 
- 二.将属性中的权限修改为777
+ **二.将属性中的权限修改为777**
 
 附上filezilla初次正确使用方法：
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "About"
-description: "Hey, this is liangyuqi."
+description: "Hey, this is BY."
 header-img: "img/post-bg-rwd.jpg"
 ---
 
@@ -15,16 +15,16 @@ header-img: "img/post-bg-rwd.jpg"
 <div class="zh post-container">
 
     <!--copied from markdown -->
-    <blockquote><p>生而为人<br>
-    我很抱歉</p></blockquote>
+    <blockquote><p>冰冻三尺 非一日之寒，<br>
+    积土成山 非斯须之作</p></blockquote>
 
-    <p>你好，我是<strong>liangyuqi</strong>，一只前端 🐒 ，即将毕业，目前在沈阳工作。</p>
+    <p>Hey，我是<strong>柏荧(BY)</strong>，一只iOS程序猿，现在厦门工作。</p>
 
-    <p>这是我的利用 <a href="https://pages.github.com/">GitHub Pages</a> 与 <a href="http://jekyll.com.cn/">Jekyll</a> 搭建的 个人博客。我在GitHub主页<a href="https://github.com/liangyuqi">👉GitHub·liangyuqi</a>。</p>
+    <p>这是我的利用 <a href="https://pages.github.com/">GitHub Pages</a> 与 <a href="http://jekyll.com.cn/">Jekyll</a> 搭建的 个人博客。我在GitHub主页<a href="https://github.com/qiubaiying">👉GitHub·BY</a> 与 简书主页<a href="https://http://www.jianshu.com/u/e71990ada2fd">👉BY</a>。</p>
 
-    <p>平时上班之余会健身，大部分运动都很喜欢，天天坐着血压拉满需要多锻炼</p>
+    <p>工作、学习之余，我特别喜欢运动，跑步、健身和自由搏击都是我特别喜欢的运动。</p>
 
-    <p>闲暇之余会看看书和Dota2</p>
+    <p></p>
     
     <h5>Talks</h5>
 
@@ -37,14 +37,14 @@ header-img: "img/post-bg-rwd.jpg"
 
 <!-- English Version -->
 <div class="en post-container">
-    <blockquote><p>Sorry for my existence. <br>
-    I dreamed of changing the world..</p></blockquote>
+    <blockquote><p>Yet another iOS Developer. <br>
+    Yet another Life-long Student.</p></blockquote>
 
-    <p>Hi, I am <strong>Yuqi Liang</strong>，you can call me <strong>Jackson</strong>. I am an  Front-end engineer and currently working in Shenyang</p>
+    <p>Hi, I am <strong>Baiying Qiu</strong>，you can call me <strong>BY</strong>. I am an iOS software engineer and currently working in Xiamen</p>
 
-    <p>This is my personal blog, through making Github Pages and Jekyll.My GitHub  👉 <a href="http://github.com/liangyuqi">Github L</a>.</p>
+    <p>This is my personal blog, through making Github Pages and Jekyll.My GitHub  👉 <a href="http://github.com/qiubaiying">Github·BY</a>.</p>
     
-    <p>I have a love for sports,especially soccer .</p>
+    <p>I am a sports enthusiast, I like fitness, running and boxing.</p>
 
     <h5>Talks</h5>
 
@@ -52,7 +52,7 @@ header-img: "img/post-bg-rwd.jpg"
     <li><a href="https://github.com">GitHub</a></li>
     <li><a href="http://jekyll.com.cn/">jekyll</a></li>
     <li><a href="https://pages.github.com/">GitHub Pages</a></li>
-    <li><a href="https://liangyuqi.github.io">liangyuqi</a></li>
+    <li><a href="https://qiubaiying.github.io">BY</a></li>
     </ul>
 </div>
 
@@ -95,6 +95,45 @@ header-img: "img/post-bg-rwd.jpg"
     // init
     _render();
 </script>
+
+
+
+{% if site.duoshuo_username %}
+<!-- 多说评论框 start -->
+<div class="comment">
+    <!-- This id is used for indexing my loss comments forcedly -->
+    <div class="ds-thread"
+    {% if site.duoshuo_username == "qiubaiying" %}
+        data-thread-id="0ee040117ec56f17aa7e2523d1eae19b"
+    {% else %}
+    <!-- U can just use this key generated to index comments at page about -->
+        data-thread-key="{{site.duoshuo_username}}/about"
+    {% endif %}
+
+    data-title="{{page.title}}"
+    data-url="{{site.url}}/about/"></div>
+</div>
+<!-- 多说评论框 end -->
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    // dynamic User hacking by Hux
+    var _user = '{{site.duoshuo_username}}';
+
+    // duoshuo comment query.
+    var duoshuoQuery = {short_name: _user };
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+{% endif %}
+
 
 {% if site.disqus_username %}
 <!-- disqus 评论框 start -->

@@ -6,7 +6,6 @@ date:       2017-04-20
 author:     Liangyuqi
 header-img: img/post-bg-1.jpg
 catalog: true
-visit:  <span id="busuanzi_value_page_pv"></span>
 tags:
     - linux
     - 网站开发

@@ -20,6 +20,10 @@ description: "欢迎来到我的博客"
     </a>
     <p class="post-meta">
         Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+        <br>
+        <span id="busuanzi_container_page_pv">
+  view <span id="busuanzi_value_page_pv"></span> times
+</span>
     </p>
 </div>
 <hr>

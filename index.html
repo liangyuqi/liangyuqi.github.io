@@ -21,7 +21,8 @@ description: "欢迎来到我的博客"
     <p class="post-meta">
         Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
         <br>
-        view {% if post.visit %}{{ post.visit }} times
+        <span id="busuanzi_container_page_pv"></span>
+  view {% if post.visit %}{{ post.visit }} times
 </span>
     </p>
 </div>

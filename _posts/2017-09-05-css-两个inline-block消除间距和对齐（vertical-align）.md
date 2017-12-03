@@ -17,9 +17,8 @@ tags:
 
        2：两个元素垂直也没有对齐，等高的的行内块元素不应该阿:
 
-
-<img src="http://images2017.cnblogs.com/blog/1017580/201708/1017580-20170831203941608-797882833.png" width = "100%" style="max-width:400px" alt="图片名称" align=center />
-<img src="http://images2017.cnblogs.com/blog/1017580/201708/1017580-20170831203929312-48497596.png" width = "100%" style="max-width:260px" alt="图片名称" align=center />
+![](http://images2017.cnblogs.com/blog/1017580/201708/1017580-20170831203941608-797882833.png)
+![](http://images2017.cnblogs.com/blog/1017580/201708/1017580-20170831203929312-48497596.png)
 ![](http://images2017.cnblogs.com/blog/1017580/201708/1017580-20170831204016530-760479977.png)
 
 ## 消除两个inline-block元素水平间距

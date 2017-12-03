@@ -35,7 +35,7 @@ mysql是非持继连接函数而mysqli是永远连接函数
 
 mysqli.dll是一个允许以对象的方式或者过程操作数据库的，它的使用方式也很容易。这里就几个常见的操作和 mysql.dll做一个对比。
 # 代码演示
-１:mysql.dll(可以理解为函数式的方式)： 
+### mysql.dll(可以理解为函数式的方式)： 
 
 ```
 	$conn = mysql_connect('localhost', 'user', 'password');　//连接mysql数据库 
@@ -54,13 +54,13 @@ mysqli也有过程式的方式，只不过开始贯以mysqli的前缀，其他�
 
 而且mysql_select_db和mysqli_select_db的参数刚好相反。 
 
-这里需要重点强调的是  <font color=red>php5.5无法使用mysql_query,需要用mysqli
-</font>
+这里需要重点强调的是  **php5.5无法使用mysql_query,需要用mysqli**
+
 所以我才接触到了mysqli 手动滑稽
 ![](http://images2015.cnblogs.com/blog/1017580/201704/1017580-20170420205832993-730184404.png)
 
 
-还有下面这些属性等：
+### mysqli.dll(对象方式)：
 
 ```
    $conn = new mysqli('localhost', 'user', 'password','data_base'); 

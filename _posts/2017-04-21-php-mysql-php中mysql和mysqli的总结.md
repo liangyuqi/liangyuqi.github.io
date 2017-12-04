@@ -15,7 +15,7 @@ tags:
 
 >而php—mysqli，字母i代表的 Improvement ，提更了相对进阶的功能。
 
-# mysql和mysqli区别
+### mysql和mysqli区别
 mysql是非持继连接函数而mysqli是永远连接函数
 
 也就是说mysql每次链接都会打开一个连接的进程
@@ -34,8 +34,8 @@ mysql是非持继连接函数而mysqli是永远连接函数
 
 
 mysqli.dll是一个允许以对象的方式或者过程操作数据库的，它的使用方式也很容易。这里就几个常见的操作和 mysql.dll做一个对比。
-# 代码演示
-### mysql.dll(可以理解为函数式的方式)： 
+### 代码演示
+#### mysql.dll(可以理解为函数式的方式)： 
 
 ```
 	$conn = mysql_connect('localhost', 'user', 'password');　//连接mysql数据库 
@@ -60,7 +60,7 @@ mysqli也有过程式的方式，只不过开始贯以mysqli的前缀，其他�
 ![](http://images2015.cnblogs.com/blog/1017580/201704/1017580-20170420205832993-730184404.png)
 
 
-### mysqli.dll(对象方式)：
+#### mysqli.dll(对象方式)：
 
 ```
    $conn = new mysqli('localhost', 'user', 'password','data_base'); 

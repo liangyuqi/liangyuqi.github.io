@@ -38,8 +38,24 @@
 .sidebar-container .short-about img {
   width: 80%;
   display: block;
-  border-radius: 5px;
+  border-radius: 50%;
   margin-bottom: 20px;
+}
+.sidebar-container .short-about img:hover {
+  transform: rotate(-45deg);
+  transition: all 1s;
+  animation: myrotate 2s ease 1s infinite alternate;
+  -moz-animation: myrotate 2s ease 1s infinite alternate;
+  -webkit-animation: myrotate 2s ease 1s infinite alternate;
+  -o-animation: myrotate 2s ease 1s infinite alternate;
+}
+@keyframes myrotate {
+  0% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
 }
 .sidebar-container .short-about p {
   margin-top: 0px;

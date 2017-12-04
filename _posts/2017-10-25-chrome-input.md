@@ -2,9 +2,9 @@
 layout:     post
 title:      Chrome 下input的默认样式
 subtitle:   
-date:       2017-10-25
+date:       2017-08-25
 author:     Liangyuqi
-header-img: img/post-bg-16.jpg
+header-img: img/post-bg-1.jpg
 catalog: true
 tags:
     - css

@@ -10,7 +10,7 @@ tags:
     - jsp
 ---
 
-# 一、ServletConfig对象  
+### 一、ServletConfig对象  
 
  在Servlet的配置文件中，可以使用一个或多个<init-param>标签为servlet配置一些初始化参数。（配置在某个servlet标签或者整个web-app下）
 当servlet配置了初始化参数后，web容器在创建servlet实例对象时，会自动将这些初始化参数封装到ServletConfig对象中，并在调用servlet的init方法时，将ServletConfig对象传递给servlet。
@@ -39,25 +39,25 @@ tags:
 
    在开发中ServletConfig的作用有如下三个：
 
-### 1）获得字符集编码
+#### 1）获得字符集编码
 
   	String charset =this.config.getInitParameter("charset");
-### 2）获得数据库连接信息
+#### 2）获得数据库连接信息
 
 	  String url =this.config.getInitParameter("url");
 	  String username =this.config.getInitParameter("username");
 	  String password =this.config.getInitParameter("password");
-### 3）获得配置文件
+#### 3）获得配置文件
 
   	String configFile =this.config.getInitParameter("config");
 
 
-# 二、ServletContext对象
+### 二、ServletContext对象
  **WEB容器在启动时，它会为每个WEB应用程序都创建一个对应的ServletContext对象，它代表当前web应用。**
  
 ServletContext对象应用
 
-### 1）多个web组件之间使用它实现数据共享
+#### 1）多个web组件之间使用它实现数据共享
 
  ServletConfig对象中维护了ServletContext对象的引用，开发人员在编写servlet时，可以通过ServletConfig.getServletContext方法获得ServletContext对象。由于一个WEB应用中的所有Servlet共享同一个ServletContext对象，因此Servlet对象之间可以通过ServletContext对象来实现通讯。ServletContext对象通常也被称之为context域对象。
 
@@ -72,14 +72,14 @@ ServletContext对象应用
 	  String value = (String)context.getAttribute("data");  //获取域中的data属性
 	  System.out.println(value);
 
-### 2）通过servletContext对象获取到整个web应用的配置信息
+#### 2）通过servletContext对象获取到整个web应用的配置信息
 
 	  String url =this.getServletContext().getInitParameter("url");
 	
 	  String username =this.getServletContext().getInitParameter("username");
 	  String password =this.getServletContext().getInitParameter("password");
 
-### 3）通过servletContext对象实现servlet转发
+#### 3）通过servletContext对象实现servlet转发
 
 由于servlet中的java数据不易设置样式，所以serlvet可以将java数据转发到JSP页面中进行处理
 	
@@ -87,7 +87,7 @@ ServletContext对象应用
 	  RequestDispatcher rd =this.getServletContext().getRequestDispatcher("/viewdata.jsp");
 	  rd.forward(request,response);
 
-### 4）通过servletContext对象读取资源文件
+#### 4）通过servletContext对象读取资源文件
 
  在实际开发中，用作资源文件的文件类型，通常是：xml、properties，而读取xml文件必然要进行xml文档的解析，所以以下例子只对properties文件进行读取(在一个web工程中，只要涉及到写地址，建议最好以/开头)
 
@@ -124,7 +124,7 @@ ServletContext对象应用
 
  
 
-### 5）web工程中，不同位置的资源文件的读取方式
+#### 5）web工程中，不同位置的资源文件的读取方式
 
  **一、当资源文件在包下面时**
  
@@ -143,7 +143,7 @@ ServletContext对象应用
 
  
 
-### 6）在非servlet程序中如何读取配置文件:用类装载器
+#### 6）在非servlet程序中如何读取配置文件:用类装载器
 
 **1）用类装载方式读取 **
 

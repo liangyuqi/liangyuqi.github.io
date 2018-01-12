@@ -15,7 +15,7 @@ tags:
 
 
 
-![](http://p2dx9kmbw.bkt.clouddn.com/image/github/1017580-20170420184855727-1086719316.png)
+![](http://p2dx9kmbw.bkt.clouddn.com/1.png)
 
 解决方案：
 

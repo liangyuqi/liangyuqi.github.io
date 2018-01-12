@@ -17,13 +17,13 @@ tags:
 
        2：两个元素垂直也没有对齐，等高的的行内块元素不应该阿:
 
-![](http://images2017.cnblogs.com/blog/1017580/201708/1017580-20170831203941608-797882833.png)
-![](http://images2017.cnblogs.com/blog/1017580/201708/1017580-20170831203929312-48497596.png)
-![](http://images2017.cnblogs.com/blog/1017580/201708/1017580-20170831204016530-760479977.png)
+![](http://p2dx9kmbw.bkt.clouddn.com/9.png)
+![](http://p2dx9kmbw.bkt.clouddn.com/10.png)
+![](http://p2dx9kmbw.bkt.clouddn.com/11.png)
 
 ## 消除两个inline-block元素水平间距
 最终效果：
-![](http://images2017.cnblogs.com/blog/1017580/201709/1017580-20170904205716616-815270350.png)
+![](http://p2dx9kmbw.bkt.clouddn.com/12.png)
 
 demo：
 
@@ -144,8 +144,8 @@ demo：
 
 **字母x的下边缘(线)就是我们的基线baseline**。（以下是几种默认的基线对齐形式）
 
-![](http://images2017.cnblogs.com/blog/1017580/201709/1017580-20170904210029897-269655777.png)![](http://images2017.cnblogs.com/blog/1017580/201709/1017580-20170904210014116-1930549184.png)
-![](http://images2017.cnblogs.com/blog/1017580/201709/1017580-20170904210039569-1755029811.png)
+![](http://p2dx9kmbw.bkt.clouddn.com/13.png)![](http://p2dx9kmbw.bkt.clouddn.com/14.png)
+![](http://p2dx9kmbw.bkt.clouddn.com/15.png)
 
 #### 2. 元素是怎么垂直对齐的？
 **vertical-align设置行内元素的基线相对于该元素所在行的基线的垂直对齐方式。**
@@ -173,7 +173,7 @@ demo：
 	vertical-align:inherit(从父元素继承vertical-align属性的值)
 	
 举个例子，正常div，高度自适应，并且有一张图片。
-![](http://images2017.cnblogs.com/blog/1017580/201711/1017580-20171123112305680-791680780.png)
+![](http://p2dx9kmbw.bkt.clouddn.com/16.png)
 
 会发现有一端留白，这段空白间隙就是vertical-align和line-height携手搞的鬼。
 
@@ -185,7 +185,7 @@ demo：
 
 **但是字符还是有高度的，由line-height决定（默认normal，1.2倍font-size）**
 
-![](http://images2017.cnblogs.com/blog/1017580/201711/1017580-20171123112359649-1610095715.png)
+![](http://p2dx9kmbw.bkt.clouddn.com/17.png)
 
 **1. 让vertical-align失效**
 
@@ -210,7 +210,7 @@ demo：
 
 不过上面的效果并不是完全的垂直居中，因为**middle中线位置(字符x的中心)并不是字符内容的绝对居中位置**
 
-![](http://images2017.cnblogs.com/blog/1017580/201711/1017580-20171123112419790-108830646.png)
+![](http://p2dx9kmbw.bkt.clouddn.com/18.png)
 
 	div { line-height: 240px; font-size: 0; }
 	img { vertical-align: middle; }

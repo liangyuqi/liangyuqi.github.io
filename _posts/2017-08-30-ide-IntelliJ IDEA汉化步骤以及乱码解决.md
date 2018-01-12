@@ -22,8 +22,8 @@ tags:
 
 4、然后**将resources_cn.jar 复制到 intellij idea 2017 .lib 目录**，重新打开就是中文 
 
-![](http://images2017.cnblogs.com/blog/1017580/201708/1017580-20170830100441937-65476529.png)
+![](http://p2dx9kmbw.bkt.clouddn.com/7.png)
 
 提示：有时候出现页面出现中文版乱码 就是忽略了第三步
 
-![](http://images2017.cnblogs.com/blog/1017580/201708/1017580-20170830100149546-1116492209.jpg)
+![](http://p2dx9kmbw.bkt.clouddn.com/8.png)

@@ -10,8 +10,6 @@ tags:
     - websocket
 ---
 
-
-
 ## 什么是websocket
 
 Websocket是一个持久化的协议，相对于HTTP这种非持久的协议来比，

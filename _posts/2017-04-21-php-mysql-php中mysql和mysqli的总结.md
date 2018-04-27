@@ -57,7 +57,7 @@ mysqli也有过程式的方式，只不过开始贯以mysqli的前缀，其他�
 这里需要重点强调的是  **php5.5无法使用mysql_query,需要用mysqli**
 
 所以我才接触到了mysqli 手动滑稽
-![](http://p2dx9kmbw.bkt.clouddn.com/2.png)
+![](http://photo.lustforlife.cn/2.png)
 
 
 #### mysqli.dll(对象方式)：

@@ -15,7 +15,7 @@ tags:
 
 
 
-![](http://p2dx9kmbw.bkt.clouddn.com/1.png)
+![](http://photo.lustforlife.cn/1.png)
 
 解决方案：
 

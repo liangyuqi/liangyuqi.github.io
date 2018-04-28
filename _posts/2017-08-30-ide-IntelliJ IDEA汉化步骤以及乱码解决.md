@@ -26,4 +26,4 @@ tags:
 
 提示：有时候出现页面出现中文版乱码 就是忽略了第三步
 
-![](http://photo.lustforlife.cn/8.png)
+![](http://photo.lustforlife.cn/8.jpg)

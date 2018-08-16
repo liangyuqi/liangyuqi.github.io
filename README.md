@@ -1,11 +1,7 @@
-# BY liangyuqi
+# 个人博客 
 
+# 记录一些工作过程中的心得
 
-## 致谢
-
-1. 感谢作者 [Hux](https://github.com/Huxpro/huxpro.github.io)
-
-2. 感谢 Jekyll、Github Pages 
-
+# keep
 
 

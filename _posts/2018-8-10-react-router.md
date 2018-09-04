@@ -118,10 +118,10 @@ Router是所有路由组件共用的底层接口，一般我们的应用并不�
 	>Event 123</NavLink>
 
 ### 四、main 路由(Route)
-<Route>组件是React Router中主要的结构单元。在任意位置只要匹配了URL的路径名(pathname)你就可以创建<Route>元素进行渲染。
+\<Route>组件是React Router中主要的结构单元。在任意位置只要匹配了URL的路径名(pathname)你就可以创建<Route>元素进行渲染。
 
 #### 1.路径(Path)
-<Route>接受一个数为string类型的path，该值路由匹配的路径名的类型。例如：<Route path='/roster'/>会匹配以/roster[注2]开头的路径名。在当前path参数与当前location的路径相匹配时，路由就会开始渲染React元素。若不匹配，路由不会进行任何操作。
+\<Route>接受一个数为string类型的path，该值路由匹配的路径名的类型。例如：\<Route path='/roster'/>会匹配以/roster[注2]开头的路径名。在当前path参数与当前location的路径相匹配时，路由就会开始渲染React元素。若不匹配，路由不会进行任何操作。
 
 	<Route path='/roster'/>
 	// 当路径名为'/'时, path不匹配
@@ -193,12 +193,12 @@ path-to-regexp包用来决定route元素的path参数与当前location是否匹�
 	    : <EmptyPage {...props}/>
 	)}/>
 	
-通常component参数与render参数被更经常地使用。children参数偶尔会被使用，它更常用在path无法匹配时呈现的'空'状态。在本例中并不会有额外的状态，所以我们将使用<Route>的component参数。
+通常component参数与render参数被更经常地使用。children参数偶尔会被使用，它更常用在path无法匹配时呈现的'空'状态。在本例中并不会有额外的状态，所以我们将使用\<Route>的component参数。
 
-通过<Route>渲染的元素会被传入一些参数。分别是match对象，当前location对象以及history对象（由router创建）。
+通过\<Route>渲染的元素会被传入一些参数。分别是match对象，当前location对象以及history对象（由router创建）。
 
 #### 5.<Main>
-现在我们清楚了根路由的结构，我们需要实际渲染我们的路由。对于这个应用，我们将会在<Main>组件中渲染<Switch>与<Route>，这一过程会将route匹配生成的HTML放在<main>节点中。
+现在我们清楚了根路由的结构，我们需要实际渲染我们的路由。对于这个应用，我们将会在<Main>组件中渲染\<Switch>与\<Route>，这一过程会将route匹配生成的HTML放在<main>节点中。
 
 	import { Switch, Route } from 'react-router-dom'
 	const Main = () => (
@@ -216,7 +216,7 @@ path-to-regexp包用来决定route元素的path参数与当前location是否匹�
 #### 6.嵌套路由
 运动员路由/roster/:number并未包含在上述<Switch>中。它由<Roster>组件负责在路径包含'/roster'的情形下进行渲染。
 
-在<Roster>组件中，我们将为两种路径进行渲染：
+在\<Roster>组件中，我们将为两种路径进行渲染：
 
 /roster ：对应路径名仅仅是/roster时，因此需要在exact元素上添加exact参数。
 
@@ -232,7 +232,7 @@ path-to-regexp包用来决定route元素的path参数与当前location是否匹�
 
 组合在相同组件中分享共同前缀的路由是一种有用的方法。这就需要简化父路由并且提供一个区域来渲染具有相同前缀的通用路由。
 
-例如，<Roster>用来渲染所有以/roster开始的全部路由。
+例如，\<Roster>用来渲染所有以/roster开始的全部路由。
 
 	const Roster = () => (
 	  <div>
@@ -250,7 +250,7 @@ path-to-regexp包用来决定route元素的path参数与当前location是否匹�
 如'/roster/:number'中:number这种写法意味着/roster/后的路径名将会被获取并存在match.params.number中。例如，路径名'/roster/6'会获取到一个对象：
 
 { number: '6' } // 注获取的值是字符串类型的
-<Player>组件可以使用props.match.params对象来确定需要被渲染的运动员的数据。
+\<Player>组件可以使用props.match.params对象来确定需要被渲染的运动员的数据。
 
 	// 返回运动员对象的API
 		import PlayerAPI from './PlayerAPI'
@@ -269,7 +269,7 @@ path-to-regexp包用来决定route元素的path参数与当前location是否匹�
 		)
 
 
-除了<Player>组件，我们的页面还包含<FullRoster>, <Schedule>以及 <Home>组件。
+除了\<Player>组件，我们的页面还包含\<FullRoster>, \<Schedule>以及 \<Home>组件。
 
 	const FullRoster = () => (
 	  <div>
